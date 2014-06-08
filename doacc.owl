@@ -120,7 +120,7 @@
     </owl:Class>
     
     <owl:Class rdf:about="http://purl.org/net/bel-epa/doacc#IPO">
-        <rdfs:label xml:lang="en">Initial Pubic Offering</rdfs:label>
+        <rdfs:label xml:lang="en">Initial Public Offering</rdfs:label>
         <skos:prefLabel xml:lang="en">IPO</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://purl.org/net/bel-epa/doacc#DistributionScheme"/>
         <rdfs:comment xml:lang="en">A means of distributing coins to miners and non-miners. Subscribers are allowed to buy a number of coins before general mining commences.</rdfs:comment>
