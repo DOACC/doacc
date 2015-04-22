@@ -279,7 +279,7 @@
         <rdfs:label xml:lang="en">distribution scheme</rdfs:label>
         <skos:prefLabel xml:lang="en">distributionscheme</skos:prefLabel>
         <ns:term_status>unstable</ns:term_status>
-        <rdfs:comment xml:lang="en">Coin distribution scheme</rdfs:comment>
+        <rdfs:comment xml:lang="en">Distribution scheme</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/net/bel-epa/doacc"/>
     </owl:ObjectProperty>
     
@@ -496,7 +496,7 @@
         <rdfs:label xml:lang="cs">stránka pro stažení</rdfs:label>
         <rdfs:label xml:lang="de">Seite zum Herunterladen</rdfs:label>
         <rdfs:label xml:lang="en">download page</rdfs:label>
-        <skos:prefLabel xml:lang="en">download page</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">download-page</skos:prefLabel>
         <rdfs:label xml:lang="es">página de descarga</rdfs:label>
         <rdfs:label xml:lang="fr">page de téléchargement</rdfs:label>
         <rdfs:label xml:lang="ja">ダウンロードページ</rdfs:label>
