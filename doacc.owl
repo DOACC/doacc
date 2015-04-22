@@ -34,7 +34,7 @@
         <dc:description xml:lang="es">El vocabulario Description of a Cryptocurrency (DOACC, Descripción de una Cryptodivisa), descrito usando RDF Schema de W3C y Web Ontology Language.</dc:description>
         <dc:description xml:lang="fr">Le vocabulaire Description Of A Crypto-monnaie (DOACC, Description D&apos;Une Crypto-monnaie), décrit en utilisant RDF Schema du W3C et OWL.</dc:description>
         <dc:description xml:lang="ja">暗号通貨 の説明の語彙 (DOACC)。W3C RDF SchemaとWeb Ontology Languageで作られた。</dc:description>
-        <owl:imports rdf:resource="&ccy;#"/>
+        <!-- <owl:imports rdf:resource="&ccy;#"/> -->
         <owl:imports rdf:resource="http://www.w3.org/TR/skos-reference/skos-owl1-dl.rdf"/>
         <owl:versionIRI rdf:resource="http://purl.org/net/bel-epa/doacc/1.1"/>
     </owl:Ontology>
@@ -94,7 +94,6 @@
         <rdfs:label xml:lang="en">Proof of Work</rdfs:label>
         <skos:prefLabel xml:lang="en">Proof of Work</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://purl.org/net/bel-epa/doacc#ProtectionScheme"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/net/bel-epa/doacc#DistributionScheme"/>
         <rdfs:comment xml:lang="en">A method of securing a cryptocurrency p2p network through requesting proof from users that (computational) work has been done.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/net/bel-epa/doacc"/>
         <ns:term_status>unstable</ns:term_status>
@@ -121,15 +120,6 @@
         <skos:prefLabel xml:lang="en">Blockchain protocol pattern</skos:prefLabel>
         <rdfs:comment xml:lang="en">Means of distinguishing cryptocurrency transaction records.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/net/bel-epa/doacc"/>
-    </owl:Class>
-    
-    <owl:Class rdf:about="http://purl.org/net/bel-epa/doacc#IPO">
-        <rdfs:label xml:lang="en">Initial Public Offering</rdfs:label>
-        <skos:prefLabel xml:lang="en">IPO</skos:prefLabel>
-        <rdfs:subClassOf rdf:resource="http://purl.org/net/bel-epa/doacc#DistributionScheme"/>
-        <rdfs:comment xml:lang="en">A means of distributing coins to miners and non-miners. Subscribers are allowed to buy a number of coins before general mining commences.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/net/bel-epa/doacc"/>
-        <ns:term_status>unstable</ns:term_status>
     </owl:Class>
     
     <owl:Class rdf:about="http://purl.org/net/bel-epa/doacc#Repository">
@@ -330,15 +320,6 @@
         <ns:term_status>unstable</ns:term_status>
     </owl:ObjectProperty>
     
-    <owl:Property rdf:about="http://purl.org/net/bel-epa/doacc#slug">
-        <rdfs:domain rdf:resource="http://purl.org/net/bel-epa/doacc#Cryptocurrency"/>
-        <rdfs:range rdf:resource="&xsd;string"/>
-        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
-        <rdfs:label xml:lang="en">slug</rdfs:label>
-        <skos:prefLabel xml:lang="en">slug</skos:prefLabel>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/net/bel-epa/doacc"/>
-    </owl:Property>
-    
     <owl:ObjectProperty rdf:about="http://purl.org/net/bel-epa/doacc#tester">
         <rdfs:label xml:lang="cs">tester</rdfs:label>
         <rdfs:label xml:lang="de">Tester</rdfs:label>
@@ -444,9 +425,9 @@
     
 
 
-    <!-- http://purl.org/net/bel-epa/doacc#block-target-time -->
+    <!-- http://purl.org/net/bel-epa/doacc#block-time -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/net/bel-epa/doacc#block-target-time">
+    <owl:DatatypeProperty rdf:about="http://purl.org/net/bel-epa/doacc#block-time">
         <rdfs:domain rdf:resource="http://purl.org/net/bel-epa/doacc#Cryptocurrency"/>
         <rdfs:range rdf:resource="&rdfs;Literal"/>
         <rdfs:label xml:lang="en">block target time</rdfs:label>
@@ -526,6 +507,15 @@
         <rdfs:isDefinedBy rdf:resource="http://purl.org/net/bel-epa/doacc"/>
     </owl:DatatypeProperty>
     
+    <owl:DatatypeProperty rdf:about="http://purl.org/net/bel-epa/doacc#expiration">
+        <rdfs:domain rdf:resource="http://purl.org/net/bel-epa/doacc#Cryptocurrency"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+        <rdfs:label xml:lang="en">expiration</rdfs:label>
+        <skos:prefLabel xml:lang="en">expiration</skos:prefLabel>
+        <ns:term_status>unstable</ns:term_status>
+        <rdfs:comment xml:lang="en">Vital status: “listed” (recently or currently listed on an exchange, “exant” (not known to be defunct) and variously “unlaunched”, “foundered”, “abandoned”, “inactive”, “defunct” - to be rationalised.</rdfs:comment>
+    </owl:DatatypeProperty>
+
     <owl:DatatypeProperty rdf:about="http://purl.org/net/bel-epa/doacc#file-release">
         <rdfs:label xml:lang="cs">soubor revize</rdfs:label>
         <rdfs:label xml:lang="en">file-release</rdfs:label>
@@ -539,7 +529,7 @@
         <rdfs:domain rdf:resource="http://purl.org/net/bel-epa/doacc#Cryptocurrency"/>
         <rdfs:range rdf:resource="&rdfs;Literal"/>
     </owl:DatatypeProperty>
-    
+
     <owl:DatatypeProperty rdf:about="http://purl.org/net/bel-epa/doacc#forum">
         <rdfs:domain rdf:resource="http://purl.org/net/bel-epa/doacc#Cryptocurrency"/>
         <rdfs:range rdf:resource="&xsd;anyURI"/>
@@ -556,6 +546,15 @@
         <ns:term_status>unstable</ns:term_status>
     </owl:DatatypeProperty>
     
+    <owl:DatatypeProperty rdf:about="http://purl.org/net/bel-epa/doacc#incept">
+        <rdfs:domain rdf:resource="http://purl.org/net/bel-epa/doacc#Cryptocurrency"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+        <rdfs:label xml:lang="en">incept</rdfs:label>
+        <skos:prefLabel xml:lang="en">incept</skos:prefLabel>
+        <ns:term_status>unstable</ns:term_status>
+        <rdfs:comment xml:lang="en">YYYY-MM of coin launch date (lowest common denominator).</rdfs:comment>
+    </owl:DatatypeProperty>
+
     <owl:DatatypeProperty rdf:about="http://purl.org/net/bel-epa/doacc#license">
         <rdfs:domain rdf:resource="http://purl.org/net/bel-epa/doacc#Cryptocurrency"/>
         <rdfs:range rdf:resource="&rdfs;Literal"/>
