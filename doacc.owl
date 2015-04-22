@@ -1,27 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/stylesheets/assets/ns-schema.xsl"?>
 <!DOCTYPE rdf:RDF [
     <!ENTITY foaf "http://xmlns.com/foaf/0.1/" >
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
-    <!ENTITY ccy "http://purl.org/net/bel-epa/ccy" >
+    <!ENTITY ccy "http://purl.org/net/bel-epa/ccy#" >
     <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
     <!ENTITY ns "http://www.w3.org/2003/06/sw-vocab-status/ns#" >
+    <!ENTITY dbp "http://dbpedia.org/resource/" >
 ]>
 
 
 <rdf:RDF xmlns="http://purl.org/net/bel-epa/doacc#"
      xml:base="http://purl.org/net/bel-epa/doacc"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:ccy="http://purl.org/net/bel-epa/ccy"
+     xmlns:ccy="http://purl.org/net/bel-epa/ccy#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#" 
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:dbp="http://dbpedia.org/resource/">
     <owl:Ontology rdf:about="http://purl.org/net/bel-epa/doacc">
         <dc:rights>Copyright © 2014 Graham Higgins</dc:rights>
         <dc:creator>Graham Higgins</dc:creator>
@@ -39,11 +42,11 @@
         <owl:versionIRI rdf:resource="http://purl.org/net/bel-epa/doacc/1.1"/>
     </owl:Ontology>
     
-    <owl:Class rdf:about="http://dbpedia.org/resource/Algorithm">
+    <owl:Class rdf:about="&dbp;Algorithm">
         <owl:equivalentClass rdf:resource="http://purl.org/net/bel-epa/doacc#Algorithm"/>
     </owl:Class>
     
-    <owl:Class rdf:about="http://dbpedia.org/resource/Cryptographic_hash_function">
+    <owl:Class rdf:about="&dbp;Cryptographic_hash_function">
         <owl:equivalentClass rdf:resource="http://purl.org/net/bel-epa/doacc#HashFunction"/>
     </owl:Class>
     
@@ -165,7 +168,7 @@
         <ns:term_status>unstable</ns:term_status>
         <rdfs:comment xml:lang="en">Electronic coin</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/net/bel-epa/doacc"/>
-        <rdfs:range rdf:resource="&ccy;#ElectronicCoin"/>
+        <rdfs:range rdf:resource="&ccy;ElectronicCoin"/>
         <rdfs:domain rdf:resource="http://purl.org/net/bel-epa/doacc#Cryptocurrency"/>
     </owl:ObjectProperty>
 
