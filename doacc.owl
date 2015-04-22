@@ -31,7 +31,7 @@
         <dc:description>The Description of a Cryptocurrency (DOACC) vocabulary, described using W3C RDF Schema and the Web Ontology Language.</dc:description>
         <dc:format>application/rdf+xml</dc:format>
         <dc:title>Description of a Cryptocurrency (DOACC) vocabulary</dc:title>
-        <rdfs:comment>An adaptation of of Edd Dumbill’s DOAP (Description of a Project) RDF schema and XML vocabulary for FOSS projects, fused with Melvin Carvalho’s Ontology for Crypto Currencies, an OWL ontology “for Certificates and crypto stuff”.</rdfs:comment>
+        <rdfs:comment>An adaptation of of Edd Dumbill’s DOAP (Description of a Project) RDF schema - https://en.wikipedia.org/wiki/DOAP and XML vocabulary for FOSS projects, fused with Melvin Carvalho’s Ontology for Crypto Currencies - https://cc.rww.io/vocab.</rdfs:comment>
         <dc:description xml:lang="cs">Slovník Description of a Cryptocurrency (DOACC, Popis kryptomena), popsaný použitím W3C RDF Schema a Web Ontology Language.</dc:description>
         <dc:description xml:lang="de">Das Vokabular &quot;Description of a Cryptocurrency (DOACC, beschreibung einer Crypto-Währung)&quot;, beschrieben durch W3C RDF Schema and the Web Ontology Language.</dc:description>
         <dc:description xml:lang="es">El vocabulario Description of a Cryptocurrency (DOACC, Descripción de una Cryptodivisa), descrito usando RDF Schema de W3C y Web Ontology Language.</dc:description>
@@ -39,7 +39,7 @@
         <dc:description xml:lang="ja">暗号通貨 の説明の語彙 (DOACC)。W3C RDF SchemaとWeb Ontology Languageで作られた。</dc:description>
         <!-- <owl:imports rdf:resource="&ccy;#"/> -->
         <owl:imports rdf:resource="http://www.w3.org/TR/skos-reference/skos-owl1-dl.rdf"/>
-        <owl:versionIRI rdf:resource="http://purl.org/net/bel-epa/doacc/1.1"/>
+        <owl:versionIRI rdf:resource="http://purl.org/net/bel-epa/doacc/1.2"/>
     </owl:Ontology>
     
     <owl:Class rdf:about="&dbp;Algorithm">
@@ -52,7 +52,7 @@
     
     <owl:Class rdf:about="http://purl.org/net/bel-epa/doacc#Algorithm">
         <rdfs:label xml:lang="en">Hashing Algorithm</rdfs:label>
-        <skos:prefLabel xml:lang="en">Hashing Algorithm</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">HashingAlgorithm</skos:prefLabel>
         <rdfs:comment xml:lang="en">Use of one or more cryptographic hash functions to secure a cryptocurrency p2p network.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/net/bel-epa/doacc"/>
         <ns:term_status>unstable</ns:term_status>
@@ -78,7 +78,7 @@
     
     <owl:Class rdf:about="http://purl.org/net/bel-epa/doacc#HashFunction">
         <rdfs:label xml:lang="en">Cryptographic hash function</rdfs:label>
-        <skos:prefLabel xml:lang="en">Cryptographic hash function</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">HashFunction</skos:prefLabel>
         <rdfs:comment xml:lang="en">Cryptographic function for producing hashes.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/net/bel-epa/doacc"/>
         <ns:term_status>unstable</ns:term_status>
@@ -86,7 +86,7 @@
 
     <owl:Class rdf:about="http://purl.org/net/bel-epa/doacc#PoSscheme">
         <rdfs:label xml:lang="en">Proof of Stake</rdfs:label>
-        <skos:prefLabel xml:lang="en">Proof of Stake</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">PoSScheme</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://purl.org/net/bel-epa/doacc#ProtectionScheme"/>
         <rdfs:comment xml:lang="en">A method of securing a cryptocurrency p2p network through requesting users to show ownership of a certain amount of currency</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/net/bel-epa/doacc"/>
@@ -95,7 +95,7 @@
     
     <owl:Class rdf:about="http://purl.org/net/bel-epa/doacc#PoWscheme">
         <rdfs:label xml:lang="en">Proof of Work</rdfs:label>
-        <skos:prefLabel xml:lang="en">Proof of Work</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">PoWScheme</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://purl.org/net/bel-epa/doacc#ProtectionScheme"/>
         <rdfs:comment xml:lang="en">A method of securing a cryptocurrency p2p network through requesting proof from users that (computational) work has been done.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/net/bel-epa/doacc"/>
@@ -104,7 +104,7 @@
     
     <owl:Class rdf:about="http://purl.org/net/bel-epa/doacc#ProtectionScheme">
         <rdfs:label xml:lang="en">Approach to protecting the public ledger</rdfs:label>
-        <skos:prefLabel xml:lang="en">Transaction record protection scheme</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">ProtectionScheme</skos:prefLabel>
         <rdfs:comment xml:lang="en">A means of protecting cryptocurrency transaction records from tampering.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/net/bel-epa/doacc"/>
         <ns:term_status>unstable</ns:term_status>
@@ -112,7 +112,7 @@
     
     <owl:Class rdf:about="http://purl.org/net/bel-epa/doacc#DistributionScheme">
         <rdfs:label xml:lang="en">Approach to initial dissemination of coins</rdfs:label>
-        <skos:prefLabel xml:lang="en">Coin distribution scheme</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">DistributionScheme</skos:prefLabel>
         <rdfs:comment xml:lang="en">A means of disseminating coins amongst miners and non-miners.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/net/bel-epa/doacc"/>
         <ns:term_status>unstable</ns:term_status>
@@ -120,7 +120,7 @@
 
     <owl:Class rdf:about="http://purl.org/net/bel-epa/doacc#Protocol">
         <rdfs:label xml:lang="en">Blockchain protocol</rdfs:label>
-        <skos:prefLabel xml:lang="en">Blockchain protocol pattern</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Protocol</skos:prefLabel>
         <rdfs:comment xml:lang="en">Means of distinguishing cryptocurrency transaction records.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/net/bel-epa/doacc"/>
     </owl:Class>
@@ -194,7 +194,7 @@
     
     <owl:ObjectProperty rdf:about="http://purl.org/net/bel-epa/doacc#hashfn">
         <rdfs:label xml:lang="en">algorithm implementing the scheme</rdfs:label>
-        <skos:prefLabel xml:lang="en">algorithm implementing the scheme</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">hashfnalgorithm</skos:prefLabel>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/net/bel-epa/doacc"/>
         <rdfs:range rdf:resource="http://purl.org/net/bel-epa/doacc#HashFunction"/>
         <rdfs:domain rdf:resource="http://purl.org/net/bel-epa/doacc#PoWscheme"/>
@@ -246,7 +246,7 @@
         <rdfs:range rdf:resource="http://purl.org/net/bel-epa/doacc#PoSscheme"/>
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
         <rdfs:label xml:lang="en">proof of stake scheme</rdfs:label>
-        <skos:prefLabel xml:lang="en">proof of stake scheme</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">posscheme</skos:prefLabel>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/net/bel-epa/doacc"/>
         <ns:term_status>unstable</ns:term_status>
     </owl:ObjectProperty>
@@ -256,7 +256,7 @@
         <rdfs:range rdf:resource="http://purl.org/net/bel-epa/doacc#PoWscheme"/>
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
         <rdfs:label xml:lang="en">proof of work scheme</rdfs:label>
-        <skos:prefLabel xml:lang="en">proof of work scheme</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">powscheme</skos:prefLabel>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/net/bel-epa/doacc"/>
         <ns:term_status>unstable</ns:term_status>
     </owl:ObjectProperty>
@@ -266,7 +266,7 @@
         <rdfs:range rdf:resource="http://purl.org/net/bel-epa/doacc#ProtectionScheme"/>
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
         <rdfs:label xml:lang="en">protection scheme</rdfs:label>
-        <skos:prefLabel xml:lang="en">protection scheme</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">protectionscheme</skos:prefLabel>
         <ns:term_status>unstable</ns:term_status>
         <rdfs:comment xml:lang="en">Transaction record protection scheme</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/net/bel-epa/doacc"/>
@@ -277,7 +277,7 @@
         <rdfs:range rdf:resource="http://purl.org/net/bel-epa/doacc#DistributionScheme"/>
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
         <rdfs:label xml:lang="en">distribution scheme</rdfs:label>
-        <skos:prefLabel xml:lang="en">distribution scheme</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">distributionscheme</skos:prefLabel>
         <ns:term_status>unstable</ns:term_status>
         <rdfs:comment xml:lang="en">Coin distribution scheme</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/net/bel-epa/doacc"/>
@@ -391,7 +391,7 @@
         <rdfs:label xml:lang="cs">anonymní kořen</rdfs:label>
         <rdfs:label xml:lang="de">Anonymes Root</rdfs:label>
         <rdfs:label xml:lang="en">anonymous root</rdfs:label>
-        <skos:prefLabel xml:lang="en">anonymous root</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">anon-root</skos:prefLabel>
         <rdfs:label xml:lang="es">raíz anónima</rdfs:label>
         <rdfs:label xml:lang="fr">racine anonyme</rdfs:label>
         <rdfs:label xml:lang="ja">匿名ルート</rdfs:label>
@@ -421,7 +421,7 @@
         <rdfs:domain rdf:resource="http://purl.org/net/bel-epa/doacc#Cryptocurrency"/>
         <rdfs:range rdf:resource="&rdfs;Literal"/>
         <rdfs:label xml:lang="en">block reward scheme</rdfs:label>
-        <skos:prefLabel xml:lang="en">block reward scheme</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">block-reward</skos:prefLabel>
         <ns:term_status>unstable</ns:term_status>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/net/bel-epa/doacc"/>
     </owl:DatatypeProperty>
@@ -434,7 +434,7 @@
         <rdfs:domain rdf:resource="http://purl.org/net/bel-epa/doacc#Cryptocurrency"/>
         <rdfs:range rdf:resource="&rdfs;Literal"/>
         <rdfs:label xml:lang="en">block target time</rdfs:label>
-        <skos:prefLabel xml:lang="en">block target time</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">block-time</skos:prefLabel>
         <ns:term_status>unstable</ns:term_status>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/net/bel-epa/doacc"/>
     </owl:DatatypeProperty>
@@ -465,7 +465,7 @@
         <rdfs:range rdf:resource="&rdfs;Literal"/>
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
         <rdfs:label xml:lang="en">Number of blocks required to confirm a transaction</rdfs:label>
-        <skos:prefLabel xml:lang="en">Number of blocks required to confirm a transaction</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">confirmations</skos:prefLabel>
         <ns:term_status>unstable</ns:term_status>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/net/bel-epa/doacc"/>
     </owl:DatatypeProperty>
@@ -476,7 +476,7 @@
         <rdfs:label xml:lang="cs">zrcadlo stránky pro stažení</rdfs:label>
         <rdfs:label xml:lang="de">Spiegel der Seite zum Herunterladen</rdfs:label>
         <rdfs:label xml:lang="en">download mirror</rdfs:label>
-        <skos:prefLabel xml:lang="en">download mirror</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">download-mirror</skos:prefLabel>
         <rdfs:label xml:lang="es">mirror de descarga</rdfs:label>
         <rdfs:label xml:lang="fr">miroir pour le téléchargement</rdfs:label>
         <rdfs:label xml:lang="ja">ダウンロードミラー</rdfs:label>
@@ -544,7 +544,7 @@
 
     <owl:DatatypeProperty rdf:about="http://purl.org/net/bel-epa/doacc#hashfn">
         <rdfs:label xml:lang="en">algorithm implementing the scheme</rdfs:label>
-        <skos:prefLabel xml:lang="en">algorithm implementing the scheme</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">hashfnalgorithm</skos:prefLabel>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/net/bel-epa/doacc"/>
         <ns:term_status>unstable</ns:term_status>
     </owl:DatatypeProperty>
@@ -623,7 +623,7 @@
         <rdfs:domain rdf:resource="http://purl.org/net/bel-epa/doacc#Cryptocurrency"/>
         <rdfs:range rdf:resource="&xsd;anyURI"/>
         <rdfs:label xml:lang="en">service endpoint</rdfs:label>
-        <skos:prefLabel xml:lang="en">service endpoint</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">service-endpoint</skos:prefLabel>
         <rdfs:label xml:lang="ja">サービスサイト</rdfs:label>
         <rdfs:comment xml:lang="en">The URI of a web service endpoint where software as a service may be accessed</rdfs:comment>
         <rdfs:comment xml:lang="ja">ことプロジェクトが提供したサーブスを載せるサイト。</rdfs:comment>
@@ -646,7 +646,7 @@
         <rdfs:range rdf:resource="&rdfs;Literal"/>
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
         <rdfs:label xml:lang="en">exchange trading symbol</rdfs:label>
-        <skos:prefLabel xml:lang="en">exchange trading symbol</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">symbol</skos:prefLabel>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/net/bel-epa/doacc"/>
         <ns:term_status>unstable</ns:term_status>
     </owl:DatatypeProperty>
@@ -656,7 +656,7 @@
         <rdfs:range rdf:resource="&rdfs;Literal"/>
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
         <rdfs:label xml:lang="en">total coins produced</rdfs:label>
-        <skos:prefLabel xml:lang="en">total coins produced</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">total-coins</skos:prefLabel>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/net/bel-epa/doacc"/>
         <ns:term_status>unstable</ns:term_status>
     </owl:DatatypeProperty>
