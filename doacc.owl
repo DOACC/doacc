@@ -470,6 +470,15 @@
         <rdfs:isDefinedBy rdf:resource="http://purl.org/net/bel-epa/doacc"/>
     </owl:DatatypeProperty>
     
+    <owl:DatatypeProperty rdf:about="http://purl.org/net/bel-epa/doacc#date-founded">
+        <rdfs:domain rdf:resource="http://purl.org/net/bel-epa/doacc#Cryptocurrency"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+        <rdfs:label xml:lang="en">date founded</rdfs:label>
+        <skos:prefLabel xml:lang="en">date founded</skos:prefLabel>
+        <ns:term_status>unstable</ns:term_status>
+        <rdfs:comment xml:lang="en">YYYY-MM-DD of coin launch / announcement date.</rdfs:comment>
+    </owl:DatatypeProperty>
+
     <owl:DatatypeProperty rdf:about="http://purl.org/net/bel-epa/doacc#download-mirror">
         <rdfs:domain rdf:resource="http://purl.org/net/bel-epa/doacc#Cryptocurrency"/>
         <rdfs:range rdf:resource="&rdfs;Literal"/>
