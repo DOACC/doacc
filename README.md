@@ -9,6 +9,9 @@ The Description of a Cryptocurrency (DOACC) vocabulary, described using W3C RDF 
 
 An adaptation of of Edd Dumbill’s DOAP (Description of a Project) RDF schema and XML vocabulary for FOSS projects, fused with Melvin Carvalho’s Ontology for Crypto Currencies, an OWL ontology “for Certificates and crypto stuff”.
 
+Licence
+=======
+
 DOACC is made available under the Creative Commons Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0):
 http://creativecommons.org/licenses/by-sa/3.0/
 
