@@ -156,7 +156,7 @@
         <rdfs:comment xml:lang="en">Version information of a release.</rdfs:comment>
         <rdfs:comment xml:lang="es">Información sobre la versión de un release.</rdfs:comment>
         <rdfs:comment xml:lang="fr">Détails sur une version d&apos;une realease.</rdfs:comment>
-        <rdfs:comment xml:lang="jp">リリースのバーション情報</rdfs:comment>
+        <rdfs:comment xml:lang="ja">リリースのバーション情報</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/net/bel-epa/doacc"/>
         <ns:term_status>unstable</ns:term_status>
     </owl:Class>
